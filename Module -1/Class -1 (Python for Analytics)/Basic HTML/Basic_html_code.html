@@ -1,0 +1,135 @@
+<!DOCTYPE html>  
+<html markdown="1">  
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="Chrome" />
+    </head>
+    <body>
+        <h1 class = "heading"> Web Scraping with Beautiful soup </h1>
+        <p>Let's scrap the website using python. </p>
+
+ <tr class="static-row-header" style="text-align:center;vertical-align:bottom;">
+ <th rowspan="2">Country (or territory)
+ </th>
+ <th rowspan="2"><a class="mw-redirect" href="/wiki/UN_subregion" title="UN subregion">Subregion</a>
+ </th>
+ <th rowspan="2"><a class="mw-redirect" href="/wiki/UN_region" title="UN region">Region</a>
+ </th>
+ <th colspan="2"><a href="/wiki/International_Monetary_Fund" title="International Monetary Fund">IMF</a><sup class="reference" id="cite_ref-GDP_IMF_1-2"><a href="#cite_note-GDP_IMF-1">[1]</a></sup>
+ </th>
+ <th colspan="2"><a href="/wiki/United_Nations" title="United Nations">UN</a><sup class="reference" id="cite_ref-UN_13-0"><a href="#cite_note-UN-13">[12]</a></sup>
+ </th>
+ <th colspan="2"><a href="/wiki/World_Bank" title="World Bank">World Bank</a><sup class="reference" id="cite_ref-14"><a href="#cite_note-14">[13]</a></sup>
+ </th></tr>,
+ <tr class="static-row-header" style="text-align:center;vertical-align:bottom;">
+ <th>Estimate</th>
+ <th>Year</th>
+ <th>Estimate</th>
+ <th>Year</th>
+ <th>Estimate</th>
+ <th>Year
+ </th></tr>,
+ <tr>
+ <td scope="row" style="text-align:left"><span class="flagicon" style="text-align:left;display:inline-block;width:25px"><span class="flagicon"><img alt="" class="thumbborder" data-file-height="650" data-file-width="1235" decoding="async" height="12" src="//upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/23px-Flag_of_the_United_States.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/35px-Flag_of_the_United_States.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/46px-Flag_of_the_United_States.svg.png 2x" width="23"/></span></span> <a href="/wiki/United_States" title="United States">United States</a><span title="GDP of the United States"> <a class="mw-redirect" href="/wiki/GDP_of_the_United_States" title="GDP of the United States"><span style="font-size:85%;">(more)</span></a></span> </td>
+ <td style="text-align:center"><a href="/wiki/Northern_America" title="Northern America">Northern America</a></td>
+ <td style="text-align:center"><a href="/wiki/Americas" title="Americas">Americas</a></td>
+ <td>22,675,271</td>
+ <td>2021</td>
+ <td>21,433,226</td>
+ <td>2020</td>
+ <td>20,936,600</td>
+ <td>2020
+ </td></tr>,
+ <tr>
+ <td scope="row" style="text-align:left"><span class="flagicon" style="text-align:left;display:inline-block;width:25px"><span class="flagicon"><img alt="" class="thumbborder" data-file-height="600" data-file-width="900" decoding="async" height="15" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/23px-Flag_of_the_People%27s_Republic_of_China.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/35px-Flag_of_the_People%27s_Republic_of_China.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/45px-Flag_of_the_People%27s_Republic_of_China.svg.png 2x" width="23"/></span></span> <a href="/wiki/China" title="China">China</a><span title="GDP of China"> <a class="mw-redirect" href="/wiki/GDP_of_China" title="GDP of China"><span style="font-size:85%;">(more)</span></a></span> </td>
+ <td style="text-align:center"><a class="mw-redirect" href="/wiki/Eastern_Asia" title="Eastern Asia">Eastern Asia</a></td>
+ <td style="text-align:center"><a href="/wiki/Asia" title="Asia">Asia</a></td>
+ <td>16,642,318</td>
+ <td><sup class="reference" id="cite_ref-China-THM_15-0"><a href="#cite_note-China-THM-15">[n 2]</a></sup>2021</td>
+ <td>14,342,933</td>
+ <td><sup class="reference" id="cite_ref-China-HM_16-0"><a href="#cite_note-China-HM-16">[n 3]</a></sup>2020</td>
+ <td>14,722,731</td>
+ <td>2020
+ </td></tr>,
+ <tr>
+ <td scope="row" style="text-align:left"><span class="flagicon" style="text-align:left;display:inline-block;width:25px"><span class="flagicon"><img alt="" class="thumbborder" data-file-height="600" data-file-width="900" decoding="async" height="15" src="//upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/23px-Flag_of_Japan.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/35px-Flag_of_Japan.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/45px-Flag_of_Japan.svg.png 2x" width="23"/></span></span> <a href="/wiki/Japan" title="Japan">Japan</a><span title="Economy of Japan"> <a href="/wiki/Economy_of_Japan" title="Economy of Japan"><span style="font-size:85%;">(more)</span></a></span> </td>
+ <td style="text-align:center"><a class="mw-redirect" href="/wiki/Eastern_Asia" title="Eastern Asia">Eastern Asia</a></td>
+ <td style="text-align:center"><a href="/wiki/Asia" title="Asia">Asia</a></td>
+ <td>5,378,136</td>
+ <td>2021</td>
+ <td>5,082,465</td>
+ <td>2020</td>
+ <td>5,064,873</td>
+ <td>2019
+ </td></tr>,
+ <tr>
+ <td scope="row" style="text-align:left"><span class="flagicon" style="text-align:left;display:inline-block;width:25px"><span class="flagicon"><img alt="" class="thumbborder" data-file-height="600" data-file-width="1000" decoding="async" height="14" src="//upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/23px-Flag_of_Germany.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/35px-Flag_of_Germany.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/46px-Flag_of_Germany.svg.png 2x" width="23"/></span></span> <a href="/wiki/Germany" title="Germany">Germany</a><span title="Economy of Germany"> <a href="/wiki/Economy_of_Germany" title="Economy of Germany"><span style="font-size:85%;">(more)</span></a></span> </td>
+ <td style="text-align:center"><a href="/wiki/Western_Europe" title="Western Europe">Western Europe</a></td>
+ <td style="text-align:center"><a href="/wiki/Europe" title="Europe">Europe</a></td>
+ <td>4,319,286</td>
+ <td>2021</td>
+ <td>3,861,123</td>
+ <td>2020</td>
+ <td>3,806,060</td>
+ <td>2020
+ </td></tr>,
+ <tr>
+ <td scope="row" style="text-align:left"><span class="flagicon" style="text-align:left;display:inline-block;width:25px"><span class="flagicon"><img alt="" class="thumbborder" data-file-height="600" data-file-width="1200" decoding="async" height="12" src="//upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/23px-Flag_of_the_United_Kingdom.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/35px-Flag_of_the_United_Kingdom.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/46px-Flag_of_the_United_Kingdom.svg.png 2x" width="23"/></span></span> <a href="/wiki/United_Kingdom" title="United Kingdom">United Kingdom</a><span title="GDP of the United Kingdom"> <a class="mw-redirect" href="/wiki/GDP_of_the_United_Kingdom" title="GDP of the United Kingdom"><span style="font-size:85%;">(more)</span></a></span> </td>
+ <td style="text-align:center"><a href="/wiki/Northern_Europe" title="Northern Europe">Northern Europe</a></td>
+ <td style="text-align:center"><a href="/wiki/Europe" title="Europe">Europe</a></td>
+ <td>3,124,650</td>
+ <td>2021</td>
+ <td>2,826,441</td>
+ <td>2020</td>
+ <td>2,707,744</td>
+ <td>2020
+ </td></tr>,
+ <tr>
+ <td scope="row" style="text-align:left"><span class="flagicon" style="text-align:left;display:inline-block;width:25px"><span class="flagicon"><img alt="" class="thumbborder" data-file-height="900" data-file-width="1350" decoding="async" height="15" src="//upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/23px-Flag_of_India.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/35px-Flag_of_India.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/45px-Flag_of_India.svg.png 2x" width="23"/></span></span> <a href="/wiki/India" title="India">India</a><span title="Economy of India"> <a href="/wiki/Economy_of_India" title="Economy of India"><span style="font-size:85%;">(more)</span></a></span> </td>
+ <td style="text-align:center"><a class="mw-redirect" href="/wiki/Southern_Asia" title="Southern Asia">Southern Asia</a></td>
+ <td style="text-align:center"><a href="/wiki/Asia" title="Asia">Asia</a></td>
+ <td>3,049,704</td>
+ <td>2021</td>
+ <td>2,891,582</td>
+ <td>2020</td>
+ <td>2,622,984</td>
+ <td>2020
+ </td></tr>,
+ <tr>
+ <td scope="row" style="text-align:left"><span class="flagicon" style="text-align:left;display:inline-block;width:25px"><span class="flagicon"><img alt="" class="thumbborder" data-file-height="600" data-file-width="900" decoding="async" height="15" src="//upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/23px-Flag_of_France.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/35px-Flag_of_France.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/45px-Flag_of_France.svg.png 2x" width="23"/></span></span> <a href="/wiki/France" title="France">France</a><span title="Economy of France"> <a href="/wiki/Economy_of_France" title="Economy of France"><span style="font-size:85%;">(more)</span></a></span> </td>
+ <td style="text-align:center"><a href="/wiki/Western_Europe" title="Western Europe">Western Europe</a></td>
+ <td style="text-align:center"><a href="/wiki/Europe" title="Europe">Europe</a></td>
+ <td>2,938,271</td>
+ <td>2021</td>
+ <td>2,715,518</td>
+ <td>2020</td>
+ <td>2,603,004</td>
+ <td>2020
+ </td></tr>,
+ <tr>
+ <td scope="row" style="text-align:left"><span class="flagicon" style="text-align:left;display:inline-block;width:25px"><span class="flagicon"><img alt="" class="thumbborder" data-file-height="1000" data-file-width="1500" decoding="async" height="15" src="//upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/23px-Flag_of_Italy.svg.png" srcset="//upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/35px-Flag_of_Italy.svg.png 1.5x, //upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/45px-Flag_of_Italy.svg.png 2x" width="23"/></span></span> <a href="/wiki/Italy" title="Italy">Italy</a><span title="Economy of Italy"> <a href="/wiki/Economy_of_Italy" title="Economy of Italy"><span style="font-size:85%;">(more)</span></a></span> </td>
+ <td style="text-align:center"><a href="/wiki/Southern_Europe" title="Southern Europe">Southern Europe</a></td>
+ <td style="text-align:center"><a href="/wiki/Europe" title="Europe">Europe</a></td>
+ <td>2,106,287</td>
+ <td>2021</td>
+ <td>2,003,576</td>
+ <td>2020</td>
+ <td>1,886,445</td>
+ <td>2020
+ </td></tr>,
+ <tr>
+ <td scope="row" style="text-align:left"><span class="flagicon" style="text-align:left;display:inline-block;width:25px"><span class="flagicon"><img alt="" class="thumbborder" data-file-height="600" data-file-width="1200" decoding="async" height="12" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/23px-Flag_of_Canada_%28Pantone%29.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/35px-Flag_of_Canada_%28Pantone%29.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/46px-Flag_of_Canada_%28Pantone%29.svg.png 2x" width="23"/></span></span> <a href="/wiki/Canada" title="Canada">Canada</a><span title="Economy of Canada"> <a href="/wiki/Economy_of_Canada" title="Economy of Canada"><span style="font-size:85%;">(more)</span></a></span> </td>
+ <td style="text-align:center"><a href="/wiki/Northern_America" title="Northern America">Northern America</a></td>
+ <td style="text-align:center"><a href="/wiki/Americas" title="Americas">Americas</a></td>
+ <td>1,883,487</td>
+ <td>2021</td>
+ <td>1,741,496</td>
+ <td>2020</td>
+ <td>1,643,408</td>
+ <td>2020
+ </td></tr>,
+ <tr>
+ <td scope="row" style="text-align:left"><span class="flagicon" style="text-align:left;display:inline-block;width:25px"><span class="flagicon"><img alt="" class="thumbborder" data-file-height="600" data-file-width="900" decoding="async" height="15" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/23px-Flag_of_South_Korea.svg.png" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/35px-Flag_of_South_Korea.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/45px-Flag_of_South_Korea.svg.png 2x" width="23"/></span></span> <a href="/wiki/South_Korea" title="South Korea">South Korea</a><span title="Economy of South Korea"> <a href="/wiki/Economy_of_South_Korea" title="Economy of South Korea"><span style="font-size:85%;">(more)</span></a></span> </td>
+ <td style="text-align:center"><a class="mw-redirect" href="/wiki/Eastern_Asia" title="Eastern Asia">Eastern Asia</a></td>
+ </body>
+</html>
